@@ -1,4 +1,4 @@
-import { ButtonLink, Input, InputError, OAuthButton, PrimaryButton } from '@/components'
+import { ButtonLink, Input, InputError, PrimaryButton } from '@/components'
 
 import { useUser } from '@/hooks'
 import { signIn } from '@/services'
@@ -113,8 +113,6 @@ const SigninPage: React.FunctionComponent = () => {
           </ButtonLink>
         </div>
       </form>
-
-      <OAuthButton />
     </section>
   )
 }

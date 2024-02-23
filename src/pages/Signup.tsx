@@ -1,4 +1,4 @@
-import { ButtonLink, Input, InputError, OAuthButton, PrimaryButton } from '@/components'
+import { ButtonLink, Input, InputError, PrimaryButton } from '@/components'
 
 import { signUp } from '@/services'
 import { signupSchema, twclsx } from '@/utils'
@@ -40,12 +40,6 @@ const SignupPage: React.FunctionComponent = () => {
             ExpenseApp
           </span>
         </h2>
-        <p className='text-sm'>
-          * ExpenseApp will not share your data,{' '}
-          <Link to='/privacy-policy' className='text-primary-5 dark:text-primary-4'>
-            See privacy policy
-          </Link>
-        </p>
 
         <div className='flex flex-col gap-2'>
           <label htmlFor='username'>Username</label>
@@ -121,8 +115,6 @@ const SignupPage: React.FunctionComponent = () => {
           </ButtonLink>
         </div>
       </form>
-
-      <OAuthButton />
     </section>
   )
 }
